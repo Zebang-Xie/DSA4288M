@@ -1,2 +1,2 @@
 # DSA4288M
-This is for Lora Lp regularization
+Just done the initial experiment which verify the algorithm can induce sparsity to the LoRA BA matrix
