@@ -48,14 +48,13 @@ def create_custom_optimizer(model, args):
     return optimizer
 
 class Custom_Optimizer(Optimizer):
-    def __init__(self, ab_params,lr, M=10, lam=10, q=0.5, granularity=1000):
+    def __init__(self, ab_params,lr, M=10, lam=0.09, q=0.5, granularity=1000):
         params = []
         for i in ab_params:
             params.append({'params': i})
         defaults = dict(M=M, lam=lam, q=q, granularity=granularity,lr=lr)
         super().__init__(params, defaults)
     
-    @torch.no_grad()
     def step(self, closure=None):
         loss = None
         if closure is not None:
