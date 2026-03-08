@@ -3,7 +3,7 @@
 
 Just done the initial experiment which verify the algorithm can induce sparsity to the LoRA BA matrix.
 
-The initial experiment were conducted using a small-scale GPT-2 model on the E2E dataset, with parameters set to $M=10$, $\lambda \in [0.1, 1.0]$, and $q=0.5$. The procedure involved an initial 1,000 steps using the original model, followed by a switch to the custom_optimiser for an additional 10 steps.
+The initial experiment were conducted using a small-scale GPT-2 model on the E2E dataset, with parameters set to $M=10$, $\lambda \in [0.01, 0.1]$, and $q=0.5$. The procedure involved an initial 1,000 steps using the original model, followed by a switch to the custom_optimiser for an additional 10 steps.
 
 <img width="490" height="280" alt="image" src="https://github.com/user-attachments/assets/ce93436b-b5ff-45d3-a022-8a990ccd2d17" />
 
